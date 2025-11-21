@@ -122,7 +122,7 @@ public class BattleManager : MonoBehaviour
         {
             if (isGoidaAttack)
             {
-                ShowBattleMessage($"ГОЙДА!!! Игрок наносит сокрушительный удар - 40 урона!");
+                ShowBattleMessage($"С Богом! Игрок наносит сокрушительный удар - 40 урона!");
                 currentEnemy.TakeDamage(40);
             }
             else
@@ -135,7 +135,7 @@ public class BattleManager : MonoBehaviour
         {
             if (isGoidaAttack)
             {
-                ShowBattleMessage($"ГОЙДА проваливается! Враг наносит ответный сокрушительный удар - 30 урона!");
+                ShowBattleMessage($"С Богом проваливается! Враг наносит ответный сокрушительный удар - 30 урона!");
                 if (player != null)
                 {
                     player.TakeDamage(30);

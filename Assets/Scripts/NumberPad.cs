@@ -133,13 +133,13 @@ public class NumberPad : MonoBehaviour
 
     private IEnumerator GoidaAttackCoroutine(int result)
     {
-        // Показываем текст Гойда
-        BattleManager.Instance.AddBattleLog("ГОЙДА!!!");
+        // Показываем текст 
+        BattleManager.Instance.AddBattleLog("С БОГОМ!!!");
 
-        // Ждем 2 секунды чтобы увидеть сообщение ГОЙДА
+        // Ждем 2 секунды чтобы увидеть сообщение 
         yield return new WaitForSeconds(2f);
 
-        // Выполняем проверку ответа с флагом атаки Гойда
+        // Выполняем проверку ответа с флагом атаки 
         BattleManager.Instance.CheckAnswer(result, true);
         ClearInput();
         canSubmit = true;
